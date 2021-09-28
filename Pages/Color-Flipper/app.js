@@ -3,7 +3,7 @@
 Variables
 ===============
 */
-const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
+const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 
@@ -13,7 +13,7 @@ Functions
 ===============
 */
 function getRandomNumber() {
-  return Math.floor(Math.random() * colors.length);
+  return Math.floor(Math.random() * hex.length);
 }
 
 /*
@@ -22,8 +22,10 @@ Event Listeners
 ===============
 */
 btn.addEventListener("click", function () {
-  // Get random number between 0 and 3 (array length)
-  const randomNumber = getRandomNumber();
-  document.body.style.backgroundColor = colors[randomNumber];
-  color.textContent = colors[randomNumber];
+  let hexColor = "#";
+  for (let i = 0; i < 6; i++) {
+    hexColor += hex[getRandomNumber()];
+  }
+  color.textContent = hexColor;
+  document.body.style.backgroundColor = hexColor;
 });
