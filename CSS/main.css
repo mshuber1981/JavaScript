@@ -173,14 +173,14 @@ Sidebar
 .sidebar-toggle {
   position: fixed;
   top: 0.5rem;
-  right: 0.5rem;
+  right: 1rem;
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
   color: var(--clr-primary-5);
   transition: var(--transition);
   cursor: pointer;
-  /* animation: bounce 2s ease-in-out infinite; */
+  animation: bounce 2s ease-in-out infinite;
 }
 
 .sidebar-toggle:hover {
@@ -298,6 +298,8 @@ Projects Page
 .project-container img {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
+  height: 16rem;
+  object-fit: cover;
 }
 
 .project-container {
