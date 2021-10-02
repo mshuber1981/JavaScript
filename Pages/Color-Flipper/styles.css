@@ -1,40 +1,8 @@
 /*
 =============== 
-Nav
-===============
-*/
-nav {
-  background: var(--clr-white);
-  height: 3rem;
-  display: grid;
-  align-items: center;
-  box-shadow: var(--dark-shadow);
-}
-
-.nav-center {
-  width: 90vw;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-center h4 {
-  margin-bottom: 0;
-  color: var(--clr-primary-5);
-}
-
-/*
-=============== 
 Container
 ===============
 */
-main {
-  min-height: calc(100vh - 3rem);
-  display: grid;
-  place-items: center;
-}
-
 .container {
   text-align: center;
 }

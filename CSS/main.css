@@ -160,9 +160,35 @@ img:not(.nav-logo) {
 }
 
 main {
-  min-height: 100vh;
+  min-height: calc(100vh - 3rem);
   display: grid;
   place-items: center;
+}
+
+/*
+=============== 
+Nav
+===============
+*/
+nav {
+  background: var(--clr-white);
+  height: 3rem;
+  display: grid;
+  align-items: center;
+  box-shadow: var(--dark-shadow);
+}
+
+.nav-center {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-center h4 {
+  margin-bottom: 0;
+  color: var(--clr-primary-5);
 }
 
 /*
@@ -171,9 +197,9 @@ Sidebar
 ===============
 */
 .sidebar-toggle {
-  position: fixed;
+  /* position: fixed;
   top: 0.5rem;
-  right: 1rem;
+  right: 1rem; */
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
