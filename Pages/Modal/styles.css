@@ -4,11 +4,12 @@ Modal
 ===============
 */
 .hero {
-  min-height: 100vh;
-  background: url("./hero.jpeg") center/cover no-repeat;
+  min-height: calc(100vh - 3rem);
+  background: url("../../Media/hero.jpeg") center/cover no-repeat;
   display: grid;
   place-items: center;
 }
+
 .banner {
   background: var(--clr-white);
   padding: 4rem 0;
@@ -18,16 +19,19 @@ Modal
   width: 90vw;
   max-width: var(--fixed-width);
 }
+
 .modal-btn {
   margin-top: 2rem;
   background: var(--clr-primary-5);
   border-color: var(--clr-primary-5);
   color: var(--clr-white);
 }
+
 .modal-btn:hover {
   background: transparent;
   color: var(--clr-primary-5);
 }
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -41,11 +45,13 @@ Modal
   visibility: hidden;
   z-index: -10;
 }
+
 /* OPEN/CLOSE MODAL */
 .open-modal {
   visibility: visible;
   z-index: 10;
 }
+
 .modal-container {
   background: var(--clr-white);
   border-radius: var(--radius);
@@ -57,7 +63,8 @@ Modal
   place-items: center;
   position: relative;
 }
-/* .close-btn {
+
+.modal-close-btn {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -68,7 +75,8 @@ Modal
   cursor: pointer;
   transition: var(--transition);
 }
-.close-btn:hover {
+
+.modal-close-btn:hover {
   color: var(--clr-red-light);
   transform: scale(1.3);
-} */
+}
