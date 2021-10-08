@@ -210,6 +210,11 @@ nav {
   color: var(--clr-primary-5);
 }
 
+.nav-center h4 span {
+  color: var(--clr-black);
+  background: #f7df1e;
+}
+
 /*
 =============== 
 Sidebar
