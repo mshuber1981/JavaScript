@@ -5,7 +5,7 @@ Reviews
 */
 .title {
   text-align: center;
-  margin-bottom: 4rem;
+  margin: 2rem 0;
 }
 
 .underline {
@@ -19,6 +19,7 @@ Reviews
 .container {
   width: 80vw;
   max-width: var(--fixed-width);
+  margin: 2rem 0;
 }
 
 .review {
