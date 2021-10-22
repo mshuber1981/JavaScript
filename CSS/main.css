@@ -179,7 +179,6 @@ img:not(.nav-logo) {
 }
 
 main {
-  /* min-height: calc(100vh - 3rem); */
   min-height: 100vh;
   display: grid;
   place-items: center;
@@ -224,7 +223,7 @@ nav {
 Sidebar
 ===============
 */
-.sidebar {
+.sidebar ul {
   overflow-y: scroll;
 }
 
