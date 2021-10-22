@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="../../CSS/normalize.css" />
     <link rel="stylesheet" href="../../CSS/main.css" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Color Flipper</title>
+    <title>Video</title>
   </head>
   <body>
     <nav>
@@ -88,9 +88,22 @@
         </li>
       </ul>
     </aside>
-    <main>
+    <!-- Preloader -->
+    <div class="preloader">
+      <img src="../../Media/video/preloader.gif" alt="Preloader" />
+    </div>
+    <header>
+      <video class="video-container" muted autoplay loop>
+        <source src="../../Media/video/video.mp4" type="video/mp4" />
+      </video>
       <h1>video project</h1>
-    </main>
+      <!-- Pause/Play Switch -->
+      <button class="switch-btn">
+        <span>Play</span>
+        <span>Pause</span>
+        <span class="switch"></span>
+      </button>
+    </header>
     <!-- javascript -->
     <script src="app.js"></script>
     <script src="../../main.js"></script>
