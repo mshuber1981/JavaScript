@@ -48,6 +48,7 @@ Reviews
   width: 100%;
   display: block;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
   position: relative;
