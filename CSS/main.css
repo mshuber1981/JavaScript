@@ -223,8 +223,8 @@ nav {
 Sidebar
 ===============
 */
-.sidebar ul {
-  overflow-y: scroll;
+.links {
+  overflow-y: auto;
 }
 
 .sidebar-toggle {
