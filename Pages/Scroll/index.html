@@ -3,18 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scroll</title>
-    <!-- font-awesome -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../Media/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../Media/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../Media/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../Media/site.webmanifest" />
+    <!-- CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      href="../../CSS/fontawesome-free-5.15.4-web/css/all.min.css"
     />
-    <!-- styles -->
+    <link rel="stylesheet" href="../../CSS/normalize.css" />
+    <link rel="stylesheet" href="../../CSS/main.css" />
     <link rel="stylesheet" href="styles.css" />
+    <title>Smooth Scroll</title>
   </head>
   <body>
-    <h1>scroll project</h1>
+    <nav>
+      <div class="nav-center">
+        <h4>Smooth Scroll</h4>
+        <button class="sidebar-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="../../Media/logo.svg" alt="logo" class="logo" />
+        <button class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <!-- links -->
+      <ul class="links">
+        <li>
+          <a href="../../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../Color-Flipper/index.html">Color Flipper</a>
+        </li>
+        <li>
+          <a href="../Counter/index.html">Counter</a>
+        </li>
+        <li>
+          <a href="./index.html">Reviews</a>
+        </li>
+        <li>
+          <a href="../Modal/index.html">Modal</a>
+        </li>
+        <li>
+          <a href="../Questions/index.html">Q & A</a>
+        </li>
+        <li>
+          <a href="../Menu/index.html">Menu</a>
+        </li>
+        <li>
+          <a href="../Video/index.html">Video</a>
+        </li>
+        <li>
+          <a href="./index.html">Smooth Scroll</a>
+        </li>
+      </ul>
+      <!-- social media -->
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.linkedin.com/in/mikeyhuber/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/mshuber1981">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </aside>
     <!-- javascript -->
     <script src="app.js"></script>
+    <script src="../../main.js"></script>
   </body>
 </html>
