@@ -189,7 +189,7 @@ main {
 Nav
 ===============
 */
-nav {
+.nav {
   background: var(--clr-white);
   height: 3rem;
   display: grid;
