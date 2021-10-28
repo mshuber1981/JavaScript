@@ -3,8 +3,7 @@
 Scroll
 ===============
 */
-/* navbar */
-.nav {
+nav {
   background: var(--clr-white);
   padding: 1rem 1.5rem;
 }
@@ -19,11 +18,11 @@ Scroll
   box-shadow: var(--light-shadow);
 }
 
-.fixed-nav .links a {
+.fixed-nav .links2 a {
   color: var(--clr-grey-1);
 }
 
-.fixed-nav .links a:hover {
+.fixed-nav .links2 a:hover {
   color: var(--clr-secondary);
 }
 
@@ -50,7 +49,7 @@ Scroll
   color: var(--clr-secondary);
 }
 
-.logo-2 {
+.nav-logo {
   height: 50px;
 }
 
@@ -59,11 +58,12 @@ Scroll
   overflow: hidden;
   transition: var(--transition);
 }
+
 .show-links {
   height: 200px;
 }
 
-.links-2 a {
+.links2 a {
   background: var(--clr-white);
   color: var(--clr-grey-5);
   font-size: 1.1rem;
@@ -75,15 +75,31 @@ Scroll
   padding: 0.75rem 0;
 }
 
-.links-2 a:hover {
+.links2 a span {
+  color: #f7df1e;
+}
+
+.links2 a:hover {
   color: var(--clr-grey-1);
+}
+
+.btn-white {
+  color: var(--clr-white);
+  border-color: var(--clr-white);
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+  background: var(--clr-white);
+  color: var(--clr-secondary);
 }
 
 @media screen and (min-width: 800px) {
   nav {
     background: transparent;
   }
-  .nav-center-2 {
+  .nav-center2 {
     width: 90vw;
     max-width: 1170px;
     margin: 0 auto;
@@ -100,10 +116,10 @@ Scroll
   .links-container {
     height: auto !important;
   }
-  .links-2 {
+  .links2 {
     display: flex;
   }
-  .links-2 a {
+  .links2 a {
     background: transparent;
     color: var(--clr-white);
     font-size: 1.1rem;
@@ -115,7 +131,7 @@ Scroll
     font-weight: bold;
     padding: 0;
   }
-  .links-2 a:hover {
+  .links2 a:hover {
     color: var(--clr-white);
   }
 }
@@ -124,7 +140,7 @@ Scroll
 header {
   min-height: 100vh;
   background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(./hero-bcg.jpeg) center/cover no-repeat;
+    url(../../Media/scroll/hero-bcg.jpeg) center/cover no-repeat;
 }
 
 .banner {
@@ -141,7 +157,7 @@ header {
 
 .container p {
   color: var(--clr-white);
-  max-width: 25rem;
+  max-width: 95vw;
   margin: 0 auto;
   margin-bottom: 1.25rem;
 }
@@ -178,11 +194,12 @@ footer {
 }
 
 footer p {
+  max-width: 95vw;
   color: var(--clr-white);
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 
 .top-link {
