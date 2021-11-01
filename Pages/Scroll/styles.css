@@ -59,10 +59,6 @@ nav {
   transition: var(--transition);
 }
 
-.show-links {
-  height: 200px;
-}
-
 .links2 a {
   background: var(--clr-white);
   color: var(--clr-grey-5);
