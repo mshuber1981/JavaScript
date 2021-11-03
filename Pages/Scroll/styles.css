@@ -3,6 +3,10 @@
 Scroll
 ===============
 */
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   background: var(--clr-white);
   padding: 1rem 1.5rem;
@@ -25,10 +29,6 @@ nav {
 .fixed-nav .links2 a:hover {
   color: var(--clr-secondary);
 }
-
-/* .fixed-nav .links-container {
-  height: auto !important;
-} */
 
 .nav-header {
   display: flex;
@@ -144,6 +144,7 @@ header {
   display: grid;
   place-items: center;
   text-align: center;
+  margin-top: -82px;
 }
 
 .container h1 {
@@ -185,8 +186,10 @@ header {
 }
 
 footer {
+  display: grid;
+  place-items: center;
+  height: 20vh;
   background: var(--clr-grey-1);
-  padding: 5rem 1rem;
 }
 
 footer p {
@@ -203,7 +206,7 @@ footer p {
   position: fixed;
   bottom: 3rem;
   right: 3rem;
-  background: var(--clr-secondary);
+  background: var(--clr-primary-5);
   width: 2rem;
   height: 2rem;
   display: grid;
