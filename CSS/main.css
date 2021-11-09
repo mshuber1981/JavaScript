@@ -138,7 +138,7 @@ p {
   }
 }
 
-img:not(.nav-logo) {
+img:not(.logo) {
   width: 100%;
   display: block;
 }
@@ -356,6 +356,10 @@ Sidebar
 Projects Page
 ===============
 */
+.projects {
+  background: var(--clr-grey-10);
+}
+
 .single-project {
   background: var(--clr-white);
   border-radius: var(--radius);
