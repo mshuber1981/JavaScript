@@ -186,6 +186,35 @@ main {
 
 /*
 =============== 
+Animation
+===============
+*/
+@-webkit-keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*
+=============== 
 Nav
 ===============
 */
@@ -218,15 +247,6 @@ Nav
   background: #f7df1e;
 }
 
-/*
-=============== 
-Sidebar
-===============
-*/
-.links {
-  overflow-y: scroll;
-}
-
 .sidebar-toggle {
   font-size: 2rem;
   background: transparent;
@@ -242,28 +262,13 @@ Sidebar
   color: var(--clr-primary-7);
 }
 
-@-webkit-keyframes bounce {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
+/*
+=============== 
+Sidebar
+===============
+*/
+.links {
+  overflow-y: scroll;
 }
 
 .sidebar-header {
@@ -392,6 +397,16 @@ Projects Page
   border-radius: 50%;
   color: var(--primary-6);
   border: 0.375rem solid var(--clr-primary-5);
+  transition: var(--transition);
+}
+
+.project-icon:hover {
+  background: var(--clr-primary-7);
+}
+
+.project-icon i {
+  -webkit-animation: bounce 2s ease-in-out infinite;
+  animation: bounce 2s ease-in-out infinite;
 }
 
 .project-details {
@@ -401,18 +416,18 @@ Projects Page
 .project-footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  color: var(--primary);
+  color: var(--clr-primary-5);
 }
 
 .project-footer a {
-  color: var(--primary);
+  color: var(--clr-primary-5);
   text-transform: capitalize;
   transition: var(--transition);
   justify-self: end;
 }
 
 .project-footer a:hover {
-  color: var(--primary-6);
+  color: var(--clr-primary-1);
 }
 
 .projects-page-center {
