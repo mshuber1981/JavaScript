@@ -3,3 +3,48 @@
 Variables
 ===============
 */
+const alert = document.querySelector(".alert");
+const form = document.querySelector(".todo-form");
+const todo = document.getElementById("todo");
+const submitBtn = document.querySelector(".submit-btn");
+const container = document.querySelector(".todo-container");
+const list = document.querySelector(".todo-list");
+const clearBtn = document.querySelector(".clear-btn");
+let editElement;
+let editFlag = false;
+let editID = "";
+
+/*
+=============== 
+Functions
+===============
+*/
+function addItem(e) {
+  e.preventDefault();
+  const value = todo.value;
+  const id = new Date().getTime().toString();
+
+  if (value && !editFlag) {
+    console.log("Add item to list");
+  } else if (value && editFlag) {
+    console.log("Editing");
+  } else {
+    displayAlert("Please enter value", "danger");
+  }
+}
+
+function displayAlert(text, action) {
+  alert.textContent = text;
+  alert.classList.add(`alert-${action}`);
+  setTimeout(function () {
+    alert.textContent = "";
+    alert.classList.remove(`alert-${action}`);
+  }, 1000);
+}
+
+/*
+=============== 
+Event Listeners
+===============
+*/
+form.addEventListener("submit", addItem);
