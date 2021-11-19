@@ -66,6 +66,10 @@ Global Styles
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--ff-secondary);
   background: var(--clr-grey-9);
@@ -226,7 +230,7 @@ Nav
   box-shadow: var(--dark-shadow);
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav-center {
@@ -343,7 +347,7 @@ Sidebar
   box-shadow: var(--clr-red-dark);
   transition: var(--transition);
   transform: translate(-100%);
-  z-index: 2;
+  z-index: 3;
 }
 
 .show-sidebar {
@@ -434,4 +438,31 @@ Projects Page
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 3rem 1rem;
+}
+
+/*
+=============== 
+Top Link
+===============
+*/
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background: var(--clr-primary-5);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  color: var(--clr-white);
+  animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.show-link {
+  visibility: visible;
+  z-index: 1;
 }
