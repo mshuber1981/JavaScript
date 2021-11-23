@@ -275,6 +275,7 @@ Sidebar
 */
 .links {
   overflow-y: scroll;
+  background: var(--clr-grey-10);
 }
 
 .sidebar-header {
