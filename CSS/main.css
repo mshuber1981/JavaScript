@@ -142,7 +142,7 @@ p {
   }
 }
 
-img:not(.logo) {
+img:not(.logo, .person-img) {
   width: 100%;
   display: block;
 }
@@ -184,8 +184,10 @@ img:not(.logo) {
 
 main {
   min-height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*
