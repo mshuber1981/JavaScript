@@ -5,7 +5,7 @@ Slider
 */
 .slider-container {
   border: 5px solid var(--clr-primary-5);
-  width: 80vw;
+  width: 100%;
   margin: 0 auto;
   height: 40vh;
   max-width: 80rem;
@@ -21,8 +21,10 @@ Slider
   height: 100%;
   background: var(--clr-primary-9);
   color: var(--clr-white);
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transition: all 0.25s ease-in-out;
   text-align: center;
 }
@@ -33,7 +35,7 @@ Slider
 }
 
 .slide h1 {
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 .person-img {
@@ -42,6 +44,7 @@ Slider
   height: 6rem;
   margin: 0 auto;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 .slide:nth-child(1) h1 {
@@ -90,6 +93,13 @@ Slider
   .slider-container {
     height: 55vh;
   }
+  .slide h1 {
+    font-size: 5rem;
+  }
+  .person-img {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -98,19 +108,20 @@ Slider
   }
 }
 
-/* .slide:nth-child(1){
+/* Manual CSS setup example */
+
+/* .slide:nth-child(1) {
   left: 0;
 }
-.slide:nth-child(2){
+.slide:nth-child(2) {
   left: 100%;
 }
-.slide:nth-child(3){
+.slide:nth-child(3) {
   left: 200%;
 }
-.slide:nth-child(4){
+.slide:nth-child(4) {
   left: 300%;
 }
-.slide{
-  transform: translateX(-100%);
+.slide {
+  transform: translateX(0%);
 } */
-/* negative value moves to left */
