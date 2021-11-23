@@ -1,16 +1,28 @@
-// DOM Traversal
-// const btns = document.querySelectorAll(".question-btn");
+// DOM Traversal example
 
-// btns.forEach(function (btn) {
-//   btn.addEventListener("click", function (e) {
-//     const question = e.currentTarget.parentElement.parentElement;
-//     question.classList.toggle("show-text");
-//   });
-// });
+/* const btns = document.querySelectorAll(".question-btn");
+
+btns.forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    const question = e.currentTarget.parentElement.parentElement;
+    question.classList.toggle("show-text");
+  });
+}); */
 
 // Using selectors inside elements
+
+/*
+=============== 
+Variables
+===============
+*/
 const questions = document.querySelectorAll(".question");
 
+/*
+=============== 
+Script
+===============
+*/
 questions.forEach(function (question) {
   const btn = question.querySelector(".question-btn");
   btn.addEventListener("click", function () {
