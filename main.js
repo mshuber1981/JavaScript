@@ -13,15 +13,17 @@ const topLink = document.querySelector(".top-link");
 Event Listeners
 ===============
 */
-window.addEventListener("scroll", function () {
-  const scrollHeight = window.pageYOffset;
+if (topLink) {
+  window.addEventListener("scroll", function () {
+    const scrollHeight = window.pageYOffset;
 
-  if (scrollHeight > 250) {
-    topLink.classList.add("show-link");
-  } else {
-    topLink.classList.remove("show-link");
-  }
-});
+    if (scrollHeight > 250) {
+      topLink.classList.add("show-link");
+    } else {
+      topLink.classList.remove("show-link");
+    }
+  });
+}
 
 toggleBtn.addEventListener("click", function () {
   sidebar.classList.toggle("show-sidebar");
