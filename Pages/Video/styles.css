@@ -43,6 +43,7 @@ header {
 
 h1 {
   color: var(--clr-white);
+  font-size: 2.5rem;
 }
 
 /* switch button */
