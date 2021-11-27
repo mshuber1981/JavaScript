@@ -9,6 +9,7 @@ Todo
   box-shadow: var(--light-shadow);
   transition: var(--transition);
   padding: 2rem;
+  width: 95vw;
   max-width: 750px;
 }
 
@@ -42,6 +43,7 @@ Todo
   color: var(--clr-primary-1);
   margin-bottom: 1.5rem;
   text-align: center;
+  width: 100%;
 }
 
 .form-control {
