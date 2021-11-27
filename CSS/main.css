@@ -323,7 +323,7 @@ Sidebar
 .social-icons {
   justify-self: center;
   display: flex;
-  padding-bottom: 2rem;
+  padding: 1rem 0;
 }
 
 .social-icons a {
@@ -346,8 +346,7 @@ Sidebar
   background: var(--clr-white);
   display: grid;
   grid-template-rows: auto 1fr auto;
-  row-gap: 1rem;
-  box-shadow: var(--clr-red-dark);
+  box-shadow: var(--dark-shadow);
   transition: var(--transition);
   transform: translate(-100%);
   z-index: 3;
@@ -376,6 +375,7 @@ Projects Page
   background: var(--clr-white);
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
+  max-width: 90vw;
 }
 
 .project-container img {
