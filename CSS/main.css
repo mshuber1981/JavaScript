@@ -351,7 +351,6 @@ Sidebar
   background: var(--clr-white);
   display: grid;
   grid-template-rows: auto 1fr auto;
-  box-shadow: var(--dark-shadow);
   transition: var(--transition);
   transform: translate(-100%);
   z-index: 3;
