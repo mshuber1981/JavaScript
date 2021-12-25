@@ -115,8 +115,8 @@ Reviews
 
 .random-btn {
   margin-top: 0.5rem;
-  background: var(--clr-primary-10);
-  color: var(--clr-primary-5);
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
   padding: 0.25rem 0.5rem;
   text-transform: capitalize;
   border-radius: var(--radius);
@@ -126,6 +126,6 @@ Reviews
 }
 
 .random-btn:hover {
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-1);
+  background: transparent;
+  color: var(--clr-black);
 }

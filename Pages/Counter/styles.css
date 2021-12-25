@@ -27,8 +27,3 @@ Counter
   padding: 0.25rem;
   margin: 0.25rem;
 }
-
-.btn:hover {
-  color: var(--clr-white);
-  background: var(--clr-black);
-}
