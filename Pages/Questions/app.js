@@ -20,7 +20,7 @@ const questions = document.querySelectorAll(".question");
 
 /*
 =============== 
-Script
+Event Listeners
 ===============
 */
 questions.forEach(function (question) {
