@@ -150,8 +150,8 @@ img:not(.logo, .person-img, .chuck) {
 
 .btn {
   text-transform: uppercase;
-  background: transparent;
-  color: var(--clr-black);
+  background: var(--clr-black);
+  color: var(--clr-white);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -163,8 +163,8 @@ img:not(.logo, .person-img, .chuck) {
   border-radius: var(--radius);
 }
 .btn:hover {
-  color: var(--clr-white);
-  background: var(--clr-black);
+  color: var(--clr-black);
+  background: transparent;
 }
 
 .links .active {
