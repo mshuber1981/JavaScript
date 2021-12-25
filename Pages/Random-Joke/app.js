@@ -47,6 +47,17 @@ function displayData(data) {
   }, random);
 }
 
+function displayError(err) {
+  const random = Math.random() * 1000;
+  const { status: error } = err;
+
+  img.classList.add("shake-img");
+  content.textContent = `${error}, check URL: ${URL}`;
+  setTimeout(function () {
+    img.classList.remove("shake-img");
+  }, random);
+}
+
 /*
 =============== 
 Event Listeners
@@ -55,5 +66,8 @@ Event Listeners
 btn.addEventListener("click", function () {
   getData(URL)
     .then((res) => displayData(res))
-    .catch((err) => console.log(err));
+    .catch(function (err) {
+      console.log(err);
+      displayError(err);
+    });
 });
