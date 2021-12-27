@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="../../CSS/normalize.css" />
     <link rel="stylesheet" href="../../CSS/main.css" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Random Joke</title>
+    <title>Random User</title>
   </head>
   <body>
     <nav class="nav">
@@ -117,11 +117,49 @@
         </li>
       </ul>
     </aside>
-    <main>
-      <h1>Random User</h1>
-    </main>
+    <div class="block bcg-black"></div>
+    <div class="block">
+      <div class="container">
+        <img src="" alt="Random User" class="user-img" />
+        <p class="user-title">Fetching random user</p>
+        <p class="user-value"></p>
+        <div class="values-list">
+          <!-- Icon 1 -->
+          <button class="icon" data-label="name">
+            <span class="far fa-user"></span>
+          </button>
+          <!-- End Icon 1 -->
+          <!-- Icon 2 -->
+          <button class="icon" data-label="email">
+            <span class="far fa-envelope-open"></span>
+          </button>
+          <!-- End Icon 2 -->
+          <!-- Icon 3 -->
+          <button class="icon" data-label="age">
+            <span class="far fa-calendar-times"></span>
+          </button>
+          <!-- End Icon 3 -->
+          <!-- Icon 4 -->
+          <button class="icon" data-label="street">
+            <span class="far fa-map"></span>
+          </button>
+          <!-- End Icon 4 -->
+          <!-- Icon 5 -->
+          <button class="icon" data-label="phone">
+            <span class="fas fa-phone"></span>
+          </button>
+          <!-- End Icon 5 -->
+          <!-- Icon 6 -->
+          <button class="icon" data-label="password">
+            <span class="fas fa-user-lock"></span>
+          </button>
+          <!-- End Icon 6 -->
+        </div>
+        <button class="btn" type="button">Random User</button>
+      </div>
+    </div>
     <!-- javascript -->
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
     <script src="../../main.js"></script>
   </body>
 </html>

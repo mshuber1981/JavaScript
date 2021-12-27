@@ -17,6 +17,7 @@ Random User
   background: var(--clr-white);
   margin: 0 auto;
   margin-top: -200px;
+  margin-bottom: 2rem;
   border-radius: var(--radius);
   position: relative;
   text-align: center;
@@ -44,7 +45,7 @@ Random User
   padding: 5px;
   background: var(--clr-white);
   border: 1px solid rgba(0, 0, 0, 0.25);
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
   box-shadow: var(--dark-shadow);
 }
 
@@ -56,10 +57,11 @@ Random User
 .user-value {
   color: var(--clr-grey-1);
   font-size: 28px;
+  overflow-wrap: break-word;
 }
 
 .values-list {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(6, 1fr);
   justify-content: center;
 }
