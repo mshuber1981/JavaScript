@@ -27,8 +27,21 @@ if (topLink) {
 
 toggleBtn.addEventListener("click", function () {
   sidebar.classList.toggle("show-sidebar");
+
+  if (window.innerWidth < 676) {
+    document.body.style.overflowY = "hidden";
+  }
 });
 
 closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
+
+  if (window.innerWidth < 676) {
+    document.body.style.overflowY = "auto";
+  }
 });
+
+window.addEventListener(
+  "DOMContentLoaded",
+  () => (document.body.style.overflowY = "auto")
+);
