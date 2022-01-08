@@ -105,7 +105,7 @@ Stripe Submenus
 */
 export const sublinks = [
   {
-    page: "products",
+    page: "Products",
     links: [
       { label: "payment", icon: "fas fa-credit-card", url: "products.html" },
       { label: "terminal", icon: "fas fa-credit-card", url: "products.html" },
@@ -113,7 +113,7 @@ export const sublinks = [
     ],
   },
   {
-    page: "developers",
+    page: "Developers",
     links: [
       { label: "plugins", icon: "fas fa-book", url: "products.html" },
       { label: "libraries", icon: "fas fa-book", url: "products.html" },
@@ -122,7 +122,7 @@ export const sublinks = [
     ],
   },
   {
-    page: "company",
+    page: "Company",
     links: [
       { label: "about", icon: "fas fa-briefcase", url: "products.html" },
       { label: "customers", icon: "fas fa-briefcase", url: "products.html" },
