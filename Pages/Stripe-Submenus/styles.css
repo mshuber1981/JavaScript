@@ -185,7 +185,8 @@ Submenus
   display: none;
 }
 
-.signin-btn span {
+.back span,
+.back-sub span {
   color: var(--clr-js);
 }
 
@@ -368,6 +369,12 @@ Submenus
   padding: 4rem 2rem;
 }
 
+.back-sub {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
 .close-btn {
   font-size: 2rem;
   background: transparent;
@@ -387,6 +394,7 @@ Submenus
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 0.25rem;
+  margin-bottom: 1rem;
 }
 
 .sidebar-sublinks a {
@@ -410,9 +418,8 @@ Submenus
   background: var(--clr-white);
   box-shadow: var(--dark-shadow);
   position: absolute;
-  top: 4rem;
-  left: 50%;
   transform: translateX(-50%);
+  transition: var(--transition);
   z-index: 3;
   display: none;
   padding: 2rem;
