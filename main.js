@@ -6,6 +6,7 @@ Variables
 const toggleBtn = document.querySelector(".sidebar-toggle");
 const closeBtn = document.querySelector(".close-btn");
 const sidebar = document.querySelector(".sidebar");
+const sidebarHeader = document.querySelector(".sidebar-header");
 const topLink = document.querySelector(".top-link");
 
 /*
@@ -27,16 +28,23 @@ if (topLink) {
 
 toggleBtn.addEventListener("click", function () {
   sidebar.classList.toggle("show-sidebar");
-
-  if (window.innerWidth < 676) {
-    document.body.style.overflowY = "hidden";
-  }
+  document.body.style.overflowY = "hidden";
 });
 
 closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
+  document.body.style.overflowY = "auto";
+});
 
-  if (window.innerWidth < 676) {
+document.body.addEventListener("click", function (e) {
+  console.log(e.target.parentElement, e.target);
+  if (
+    e.target.parentElement !== toggleBtn &&
+    e.target.parentElement !== sidebar &&
+    e.target.parentElement !== sidebarHeader &&
+    e.target !== sidebar
+  ) {
+    sidebar.classList.remove("show-sidebar");
     document.body.style.overflowY = "auto";
   }
 });
