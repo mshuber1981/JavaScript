@@ -37,7 +37,6 @@ closeBtn.addEventListener("click", function () {
 });
 
 document.body.addEventListener("click", function (e) {
-  console.log(e.target.parentElement, e.target);
   if (
     e.target.parentElement !== toggleBtn &&
     e.target.parentElement !== sidebar &&
