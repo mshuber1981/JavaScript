@@ -12,13 +12,12 @@ Pagination
   width: 8rem;
   height: 0.25rem;
   background: var(--clr-primary-5);
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
 }
 
 .followers {
   width: 90vw;
   max-width: var(--max-width);
-  margin: 5rem auto;
 }
 
 .container {
