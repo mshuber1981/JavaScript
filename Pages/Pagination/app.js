@@ -9,6 +9,9 @@ const URL = "https://api.github.com/users/john-smilga/followers?per_page=100";
 const title = getElement(".section-title h2");
 const followersElement = getElement(".followers");
 const container = getElement(".container");
+const btnContainer = getElement(".btn-container");
+let index = 0;
+let pages = [];
 
 /*
 =============== 
@@ -20,7 +23,8 @@ async function init() {
     const followers = await fetchData(URL);
 
     title.textContent = "Pagination";
-    displayFollowers(paginate(followers)[0]);
+    pages = paginate(followers);
+    setupUI();
   } catch (error) {
     title.textContent = "Error";
     followersElement.innerHTML = `
@@ -64,9 +68,47 @@ function paginate(followers) {
   return newFollowers;
 }
 
+function displayButtons(container, pages, activeIndex) {
+  let btns = pages.map(
+    (_, pageIndex) =>
+      `<button class="page-btn ${
+        activeIndex === pageIndex ? "active-btn" : "null"
+      }" data-index="${pageIndex}">${pageIndex + 1}</button>`
+  );
+
+  btns.unshift('<button class="prev-btn">Prev</button>');
+  btns.push('<button class="next-btn">Next</button>');
+  container.innerHTML = btns.join("");
+}
+
+function setupUI() {
+  displayFollowers(pages[index]);
+  displayButtons(btnContainer, pages, index);
+}
+
 /*
 =============== 
 Event Listeners
 ===============
 */
 window.addEventListener("load", init);
+btnContainer.addEventListener("click", function (e) {
+  if (e.target.classList.contains("btn-container")) return;
+  if (e.target.classList.contains("page-btn")) {
+    index = parseInt(e.target.dataset.index);
+  }
+  if (e.target.classList.contains("next-btn")) {
+    index++;
+    if (index > pages.length - 1) {
+      index = 0;
+    }
+  }
+  if (e.target.classList.contains("prev-btn")) {
+    index--;
+    if (index < pages.length - 1) {
+      index = pages.length - 1;
+    }
+  }
+
+  setupUI();
+});
