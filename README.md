@@ -2,7 +2,7 @@
 
 ![Certificate of completion](/Media/JScert.jpg)
 
-Learn Javascript by building many interesting projects.
+Learn JavaScript by building many interesting projects.
 
 By <a href="https://github.com/john-smilga">John Smilga</a>
 
