@@ -28,17 +28,7 @@ Menu
 }
 
 .filter-btn {
-  background: var(--clr-primary-5);
-  border-color: var(--clr-primary-5);
-  font-size: 1rem;
-  text-transform: capitalize;
   margin: 0.25rem 0.5rem;
-  letter-spacing: 1px;
-  border-radius: var(--radius);
-  padding: 0.375rem 0.75rem;
-  color: var(--clr-white);
-  cursor: pointer;
-  transition: var(--transition);
 }
 
 .filter-btn:hover {

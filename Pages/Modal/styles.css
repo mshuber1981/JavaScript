@@ -22,14 +22,6 @@ Modal
 
 .modal-btn {
   margin-top: 2rem;
-  background: var(--clr-primary-5);
-  border-color: var(--clr-primary-5);
-  color: var(--clr-white);
-}
-
-.modal-btn:hover {
-  background: transparent;
-  color: var(--clr-primary-5);
 }
 
 .modal-overlay {

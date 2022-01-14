@@ -33,10 +33,6 @@ input {
   font-size: 1.25rem;
 }
 
-button {
-  background: var(--clr-primary-10);
-}
-
 .result {
   margin-bottom: 2rem;
 }
